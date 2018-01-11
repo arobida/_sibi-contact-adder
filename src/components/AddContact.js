@@ -13,8 +13,10 @@ class AddContact extends Component {
         this.state = {
             name: '',
             gender: '',
+            email: '',
             submittedName: '',
-            submittedGender: ''
+            submittedGender: '',
+            submittedEmail: ''
         }
     }
 
@@ -23,19 +25,20 @@ class AddContact extends Component {
     })
 
     handleSubmit = () => {
-        const { name, gender } = this.state
+        const { name, gender, email } = this.state
 
-        this.setState({ submittedName: name, submittedGender: gender, name: '', gender: '' })
+        this.setState({ submittedName: name, submittedGender: gender, submittedEmail: '', name: '', gender: '', email: '' })
     }
 
     render() {
-        const { name, gender, submittedName, submittedGender } = this.state
+        const { name, gender, email, submittedName, submittedGender, submittedEmail } = this.state
         return (
             <Segment raised style={{margin:'0 auto',width:'65%'}}>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group widths='equal'>
               <Form.Field control={Input} label='Name' name='name' value={name} placeholder='First name' onChange={this.handleChange}/>
               <Form.Field control={Select} label='Gender' name='gender' value={gender} options={options} placeholder='Gender'onChange={this.handleChange}/>
+              <Form.Field control={Input} label='Email' name='email' value={email} placeholder='Email address' onChange={this.handleChange}/>
             </Form.Group>
             <Form.Field control={Button} color="blue">Submit</Form.Field>
           </Form>
@@ -43,9 +46,11 @@ class AddContact extends Component {
          <strong>onChange:</strong>
         <p>{this.state.name}</p>
         <p>{this.state.gender}</p>
+        <p>{this.state.email}</p>
         <strong>onSubmit:</strong>
         <p>{ this.state.submittedName}</p>
         <p>{ this.state.submittedGender}</p>
+        <p>{ this.state.submittedEmail}</p>
         </div>
         </Segment>
         );

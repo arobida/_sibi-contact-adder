@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img  src={sibi} style={{width:'60%',margin:'8px'}} />
+          <img  src={sibi} style={{width:'30%',margin:'8px'}} />
           <h1 className="App-title">Sibi Contact Form</h1>
         </header>
         <div id="formBox">
