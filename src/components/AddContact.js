@@ -27,7 +27,7 @@ class AddContact extends Component {
     handleSubmit = () => {
         const { name, gender, email } = this.state
 
-        this.setState({ submittedName: name, submittedGender: gender, submittedEmail: '', name: '', gender: '', email: '' })
+        this.setState({ submittedName: name, submittedGender: gender, submittedEmail: email, name: '', gender: '', email: '' })
     }
 
     render() {
