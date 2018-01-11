@@ -41,11 +41,11 @@ class AddContact extends Component {
           </Form>
          <div style={{color:'black'}}> 
          <strong>onChange:</strong>
-        <pre>{this.state.name}</pre>
-        <pre>{this.state.gender}</pre>
+        <p>{this.state.name}</p>
+        <p>{this.state.gender}</p>
         <strong>onSubmit:</strong>
-        <pre>{ this.state.submittedName}</pre>
-        <pre>{ this.state.submittedGender}</pre>
+        <p>{ this.state.submittedName}</p>
+        <p>{ this.state.submittedGender}</p>
         </div>
         </Segment>
         );

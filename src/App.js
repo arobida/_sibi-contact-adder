@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Button } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import AddContact from './components/AddContact';
+import sibi from './sibi.png';
 
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <img  src={sibi} style={{width:'60%',margin:'8px'}} />
           <h1 className="App-title">Sibi Contact Form</h1>
         </header>
         <div id="formBox">
