@@ -22,7 +22,7 @@ class App extends Component {
   componentDidMount() {
     this.getContacts();
   }
-  getRepos() {
+  getContacts() {
     axios.get('*')
       .then((res) => {
         this.setState({
