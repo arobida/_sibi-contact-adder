@@ -19,21 +19,21 @@ class App extends Component {
       data: ""
     }
   }
-  componentDidMount() {
-    this.getContacts();
-  }
-  getContacts() {
-    axios.get('*')
-      .then((res) => {
-        this.setState({
-          data: res
-        });
-        console.log(res);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }
+  // componentDidMount() {
+  //   this.getContacts();
+  // }
+  // getContacts() {
+  //   axios.get('contacts')
+  //     .then((res) => {
+  //       this.setState({
+  //         data: res
+  //       });
+  //       console.log(res);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // }
 
   render() {
     this.getContacts();
