@@ -9,7 +9,7 @@
 # production
 /build
 
-# passwords
+#passwords
 /creds.js
 
 # misc
