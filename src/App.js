@@ -36,7 +36,6 @@ class App extends Component {
   // }
 
   render() {
-    this.getContacts();
     return (
       <div className="App">
         <header className="App-header">
